@@ -1,11 +1,15 @@
+
 import Image from "next/image";
-import { heading } from "./font";
+import HomePage from "@/view/landing_page/page";
+// import { useRouter } from 'next/router'
 
 export default function Home() {
+  // const router = useRouter();
+  // const path = router.asPath;
+  // console.log(path)
   return (
       <div>
-           <h1 className={`${heading} text-4xl` }>Hello world</h1>
-           <h1 className="text-4xl">Hello world</h1>
+          <HomePage/>
       </div>
   );
 }

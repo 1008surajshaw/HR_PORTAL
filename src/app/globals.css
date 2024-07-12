@@ -31,3 +31,13 @@ body {
     text-wrap: balance;
   }
 }
+.heading-large {
+   @apply text-[48px] leading-[66px] font-bold
+}
+
+.content-small{
+  @apply text-[16px] leading-[26px] font-normal
+}
+.content-large{
+  @apply text-[42px] leading-[36px] font-normal
+}
