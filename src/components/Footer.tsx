@@ -51,10 +51,12 @@ const Footer = () => {
         <div className="w-2/5">
           <form className={`space-y-4`}>
             <div>
+              
               <WhiteTextField
                 id="outlined-basic"
                 label="Email"
                 type="text"
+                //@ts-ignore
                 height="50px"
                 placeholder="your email address"
                 fullWidth
@@ -63,11 +65,13 @@ const Footer = () => {
                 }}
               />
             </div>
-            <div>
+            <div> 
+              
               <WhiteTextField
                 id="outlined-basic"
                 label="Input your message"
                 type="text"
+                //@ts-ignore
                 height="150px"
                 placeholder="Describe your project"
                 fullWidth
