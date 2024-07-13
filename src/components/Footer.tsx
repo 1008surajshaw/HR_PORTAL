@@ -36,11 +36,11 @@ const WhiteTextField = styled(TextField)(({ height }) => ({
 
 const Footer = () => {
   return (
-    <div className="bg-primary_bg text-white rounded-t-3xl ">
-      <div className="w-10/12 pt-[56px] pb-[56px] mx-auto flex justify-between items-start">
+    <div className="bg-primary_bg text-white  ">
+      <div className="w-10/12 pt-[30px] pb-[10px] mx-auto flex justify-between items-start">
         <div className="w-2/5">
-          <h2 className={`${sarabun_bold} heading-large mb-4`}>Say hello and let's work together !</h2>
-          <div className="flex space-x-4 mt-6 items-center">
+          <h2 className={`${sarabun_bold} text-4xl mb-2`}>Say hello and let's work together !</h2>
+          <div className="flex space-x-4 mt-[40px] items-center">
             <Link href="#" className="text-white text-[24px]"><FaInstagram/></Link>
             <Link href="#" className="text-white text-[24px]"><FaFacebook/></Link>
             <Link href="#" className="text-white text-[24px]"><CiLinkedin/></Link>
@@ -57,7 +57,7 @@ const Footer = () => {
                 label="Email"
                 type="text"
                 //@ts-ignore
-                height="50px"
+                height="40px"
                 placeholder="your email address"
                 fullWidth
                 InputLabelProps={{
@@ -72,7 +72,7 @@ const Footer = () => {
                 label="Input your message"
                 type="text"
                 //@ts-ignore
-                height="150px"
+                height="90px"
                 placeholder="Describe your project"
                 fullWidth
                 InputLabelProps={{
@@ -83,7 +83,7 @@ const Footer = () => {
             <div>
               <button
                 type="submit"
-                className={`px-6 py-2 bg-white ${opensans_regular} text-black rounded-md`}
+                className={`px-6 py-1 bg-white ${opensans_regular} text-black rounded-md`}
               >
                 Submit
               </button>
