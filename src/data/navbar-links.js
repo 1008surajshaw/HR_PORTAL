@@ -1,22 +1,34 @@
+import path from "path";
+import { title } from "process";
+
 export const NavbarLinks = [
-    {
-        id:'project',
-      title: "Projects",
-      path: "/projects",
+  {
+    id:'home',
+    title: "Home",
+    path: "/home",
     },
     {
-        id:'about',
-      title: "About me",
-      path: '/about',
+      id:'services',
+    title: "Services",
+    path: "/services",
     },
     {
-        id:'blog',
-      title: "Blog",
+      id:'blog',
+      title: "Blogs",
       path: "/blog",
     },
     {
-        id:'contact',
+      id:'about',
+      title:'About us',
+      path:"/about"
+    },
+    {
+      id:'contact',
       title: "Contact",
       path: "/contact",
     },
   ];
+
+
+  // hrpro_recruit
+  // hrpro_people_365
