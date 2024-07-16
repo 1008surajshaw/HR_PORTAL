@@ -7,9 +7,9 @@ const LandingPage = () => {
   return (
     <div className="bg-white">
          <div className="flex w-10/12 mx-auto py-12  flex-col  md:flex-row items-center justify-between  ">
-      <div className="md:w-2/5">
-        <h1 className={`mb-4 font-bold ${sarabun_bold}  heading-large  `}>Shaping the Future of HR with AI and Cloud Integration</h1>
-        <p className={`${sarabun_regular} mb-4 text-[16px] leading-[20px] text-primary_text`}>
+      <div className="md:w-2/5 mb-9">
+        <h1 className={`mb-4 font-bold ${sarabun_bold}  heading-large  text-black`}>Shaping the Future of HR with AI and Cloud Integration</h1>
+        <p className={`${sarabun_regular} mb-4 text-[16px] leading-[20px] text-[#323743FF]`}>
           Welcome to HrPro - The innovative AI-driven platform for all your HR needs. Discover our AI recruitment portal and cloud-based payroll software with AI integration, designed specifically for SMEs.
         </p>
         <div className="flex items-center space-x-4 mb-6">
