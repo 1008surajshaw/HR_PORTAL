@@ -5,7 +5,7 @@ export const NavbarLinks = [
   {
     id:'home',
     title: "Home",
-    path: "/home",
+    path: "/",
     },
     {
       id:'services',

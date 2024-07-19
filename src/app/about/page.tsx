@@ -1,9 +1,9 @@
 import React from 'react'
-
+import AboutPage from '@/view/about/page'
 const page = () => {
   return (
     <div>
-         about
+        <AboutPage/>
     </div>
   )
 }

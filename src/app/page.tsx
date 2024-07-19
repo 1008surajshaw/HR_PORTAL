@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import HomePage from "@/view/landing_page/page";
+
 // import { useRouter } from 'next/router'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
   return (
       <div>
           <HomePage/>
+         
       </div>
   );
 }
