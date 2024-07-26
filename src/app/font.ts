@@ -10,6 +10,7 @@ const openSansBold = Open_Sans({
     display: 'swap',
     weight: '700',
 });
+
 export const  opensans_regular= openSansRegular.className;
 export const opensans_bold=openSansBold.className;
 const sarabunRegular=Sarabun({
@@ -22,5 +23,11 @@ const sarabunBold=Sarabun({
     display:'swap',
     weight:'700'
 })
+const sarabunSemiBold=Sarabun({
+    subsets:['latin'],
+    display:'swap',
+    weight:'600'
+})
 export const sarabun_regular=sarabunRegular.className;
 export const sarabun_bold=sarabunBold.className;
+export const sarabun_semibold=sarabunSemiBold.className;

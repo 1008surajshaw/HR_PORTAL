@@ -1,11 +1,15 @@
-import React from 'react';
-
+"use client"
+import { opensans_regular, sarabun_bold } from '@/app/font';
+import member1 from "@/assets/about/member1.png"
+import member2 from "@/assets/about/member2.png"
+import member3 from "@/assets/about/member3.png"
+import Image from 'next/image';
 const teamMembers = [
   {
     name: 'Alessandra Hoover',
     title: 'Professional title',
     description: 'Commodo qui nulla ipsum ea cupidatat sit aliquip dolor.',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    image: member1, // Replace with actual image URL
     linkedin: '#',
     twitter: '#',
   },
@@ -13,7 +17,7 @@ const teamMembers = [
     name: 'Sharon Devarpiya',
     title: 'Founder & CEO',
     description: 'Commodo qui nulla ipsum ea cupidatat sit aliquip dolor.',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    image: member2, // Replace with actual image URL
     linkedin: '#',
     twitter: '#',
   },
@@ -21,7 +25,7 @@ const teamMembers = [
     name: 'Sharon Devarpiya',
     title: 'Founder & CEO',
     description: 'Commodo qui nulla ipsum ea cupidatat sit aliquip dolor.',
-    image: 'https://via.placeholder.com/150', // Replace with actual image URL
+    image: member3, // Replace with actual image URL
     linkedin: '#',
     twitter: '#',
   },
@@ -29,19 +33,23 @@ const teamMembers = [
 
 const TeamMembers = () => {
   return (
-    <div className="bg-gray-100 p-8 rounded-lg shadow-lg max-w-7xl mx-auto mt-8 py-12">
-      <h2 className="text-3xl font-bold text-center mb-4">Our Team</h2>
-      <p className="text-center mb-6 text-gray-700">
+    <div className="bg-white p-8 rounded-lg shadow-lg  mx-auto mt-8 py-12">
+      <h2 className={`text-[48px] leading-[68px] text-[#171A1FFF] ${sarabun_bold} text-center`}>Our Team</h2>
+      <div className='w-10/12 mx-auto'>
+      <p className={`text-[18px]  text-center my-8  leading-[28px] ${opensans_regular} text-[#171A1FFF]`}>
         At HrPro, our success is driven by a dedicated team of professionals who embody our core values of innovation, integrity, client-centricity, and continuous improvement. Get to know the individuals who make HrPro possible:
       </p>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {teamMembers.map((member, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img src={member.image} alt={member.name} className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+          <div key={index} className="bg-white   rounded-lg shadow-lg text-center">
+            <Image src={member.image} alt={member.name} className="w-60 h-32 mx-auto rounded-full mb-4" />
+            <div className='bg-[#FEF1F199]'>
+
+            <h3 className="text-xl font-semibold mb-2 pt-3">{member.name}</h3>
             <p className="text-red-600 mb-2">{member.title}</p>
             <p className="text-gray-700 mb-4">{member.description}</p>
-            <div className="flex justify-center space-x-4">
+            <div className="flex justify-center space-x-4 py-3">
               <a href={member.linkedin} className="text-blue-600">
                 <svg
                   className="w-6 h-6"
@@ -63,8 +71,10 @@ const TeamMembers = () => {
                 </svg>
               </a>
             </div>
+            </div>
           </div>
         ))}
+      </div>
       </div>
     </div>
   );

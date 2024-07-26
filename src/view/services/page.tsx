@@ -1,10 +1,10 @@
 import TalentAcquisition from '@/components/services/TalentAcquisition'
-import React from 'react'
-
+import KeyFeatures from '@/components/services/KeyFeatures'
 const page = () => {
   return (
     <div>
         <TalentAcquisition/>
+        <KeyFeatures/>
     </div>
   )
 }
